@@ -1,0 +1,39 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "An Overview of Buffer Overflows and the Potential for Cryptographic Mitigation";
+}
+
+<div class="text-center">
+    <h1 class="display-8">An Overview of Buffer Overflows and the Potential for Cryptographic Mitigation</h1>
+    <p>An educational presentation on the concept, implications, and prevention of buffer overflows.</p>
+
+    <section>
+        <h2>Introduction</h2>
+        <p style="text-align:justify">Buffer overflow vulnerabilities remain a critical security issue in software development, posing substantial threats across various applications. Buffer overflows occur when a program writes more data to a buffer than it can hold, potentially allowing attackers to execute arbitrary code. Historically, these vulnerabilities have enabled some of the most notorious breaches in cybersecurity, highlighting the need for robust defenses. This literature overview synthesizes key contributions to the understanding and mitigation of such vulnerabilities, analyzing the methods of attacks, experimental research, and the development of countermeasures. In this overview, I explore seminal works and current research trends that address buffer overflow attacks. The review covers a variety of attack methodologies, providing a comprehensive understanding of how these vulnerabilities are exploited. Additionally, the overview discusses experimental approaches used to evaluate the effectiveness of different security measures and the evolution of countermeasures designed to protect against such exploits. The literature overview is to emphasize the importance of continuous advancement in security techniques to counter the evolving landscape of buffer overflow threats.</p>
+    </section>
+
+    <section>
+        <h2>Buffer Overflow Attack</h2>
+    </section>
+    <section>
+        <h2>Case Studies</h2>
+        <p>
+            <a href="StackGuard">StackGuard</a>
+        </p>
+        <p>
+            <a href="CaseStudies">Protection against overflow attacks</a>
+        </p>
+        <p>
+            <a href="MultiPleFaultInjectiion">Multiple fault injection and proven countermeasure</a>
+        </p>
+        <p>
+            <a href="LsStk">Lightweight solution for stack overflow</a>
+        </p>
+        
+    </section>
+
+    <section>
+        <h2>Potential Countermeasures</h2>
+    </section>
+</div>

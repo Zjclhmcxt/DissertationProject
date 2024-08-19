@@ -1,0 +1,23 @@
+﻿@page
+@model DP.Pages.CaseStudiesModel
+@{
+}
+
+<div class="text-justify">
+    <h1 class="display-10">Case Studies</h1>
+    <p>An educational presentation on the concept, implications, and prevention of buffer overflows.</p>
+
+    <section>
+        <h2>Protection against overflow attacks</h2>
+        <p>Zhu (2006) provides an in-depth exploration of holistic defense strategies against buffer overflow vulnerabilities, emphasizing the enhancement of security at both the compiler and system interaction levels. The comprehensive approach addresses the persistent threat posed by buffer overflows, which can corrupt the integrity of a system by exploiting vulnerabilities in the handling of function pointers and control flows within applications.</p>
+        <p>The first strategy involves the protection of function pointers at the compiler level. Zhu (2006) introduces a sophisticated compiler patch designed to automatically identify potential function pointers within the code. Once identified, these pointers are encrypted before they are stored in memory, adding a robust layer of security that shields against unauthorized manipulation by attackers. The encryption mechanism utilizes dynamically generated keys, which are uniquely produced based on the current time and process ID. This dynamic generation method significantly enhances security by rendering the encryption keys unpredictable to potential attackers, thus complicating any attempts to decrypt and manipulate function pointers maliciously. The encryption scheme integrates both XOR (a simpler, faster method) and RC5 (a more complex and secure algorithm), thereby balancing performance with security.</p>
+        <p>The second strategy focuses on control flow integrity through the use of control flow checking automata. This mechanism operates by continuously monitoring the runtime behavior of the program to assess and adjust the trust level dynamically attributed to various components of the program's execution. By ensuring that the execution flow adheres to a predefined control flow model, this method acts as a safeguard, detecting and responding to any deviations that might indicate a buffer overflow attack. The approach is fine-grained, working at the basic block level within the program’s structure, which allows for precise detection of anomalies and swift response actions to mitigate potential threats.</p>
+        <p>This holistic strategy of the dual approach ensures that even if an attacker manages to exploit a buffer overflow, the program’s behavior is constrained within strict, predefined security parameters. This confinement prevents the execution of unauthorized actions that could lead to further system compromise. The framework thus not only addresses direct buffer overflow attacks but also strengthens the overall security posture of the system by enforcing consistent policy adherence across all levels of operation.</p>
+        <p>This comprehensive strategy presented by Zhu (2006) are particularly relevant in the context of increasingly sophisticated cyber threats. By integrating both compiler-level encryption of function pointers and runtime monitoring of control flows, the robust framework can adapt to the evolving landscape of cybersecurity threats. Dual approach not only mitigates the immediate impacts of buffer overflows but also enhances the resilience of systems against future vulnerabilities.</p>
+    </section>
+    @*<section>
+    <h2>Buffer overflow attack with multiple fault injection and a proven countermeasure</h2>
+    <p></p>
+    </section>*@
+    
+</div>
